@@ -16,4 +16,8 @@
     <Exec Command="xcopy /y /d &quot;$(SolutionDir)x64\Debug\HardwareEmulator.dll&quot; &quot;$(TargetDir)&quot;" />
   </Target>
 
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+  </ItemGroup>
+
 </Project>
