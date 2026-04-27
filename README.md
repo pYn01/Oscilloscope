@@ -28,5 +28,5 @@ This project was built to practice cross-language integration, asynchronous prog
 
 1. Clone this repository.
 2. Open the solution file in **Visual Studio**.
-3. Build the solution (ensure the C++ DLL is configured to copy into the C# output folder).
-4. Run the C# WPF project and click "Start Reading".
+3. Build the solution ( Ctrl+Shift+B ).
+4. Run the C# WPF project ( F5 )
