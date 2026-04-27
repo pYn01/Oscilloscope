@@ -8,9 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="xcopy /y /d &quot;$(SolutionDir)x64\Debug\HardwareEmulator.dll&quot; &quot;$(TargetDir)&quot;" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y /d &quot;$(SolutionDir)x64\Debug\HardwareEmulator.dll&quot; &quot;$(TargetDir)&quot;" />
+  </Target>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using OscilloscopeUI.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,12 @@ namespace OscilloscopeUI
         public MainWindow()
         {
             InitializeComponent();
+
+            var viewModel = new MainViewModel();
+
+            this.DataContext = viewModel;
+
+            _ = viewModel.StartReadingAsync();
         }
     }
 }

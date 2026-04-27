@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Threading.Tasks;
-using OscilloscopeUI.Models;
+using OscilloscopeUI.Model;
 
 namespace OscilloscopeUI.ViewModels
 {
@@ -28,12 +28,16 @@ namespace OscilloscopeUI.ViewModels
         {
             while (true)
             {
-                // TUO COMPITO QUI DENTRO:
-                // 1. Chiama HardwareDriver.GetVoltage() per farti dare il numero (il float).
-                // 2. Trasforma il numero in stringa (es. con .ToString("F2")) e aggiungi " V".
-                // 3. Salva la stringa dentro la proprietà 'VoltageText'.
-
-                // 4. Metti in pausa il ciclo per 100 millisecondi per non fondere il PC
+                try
+                {
+                    float voltage = HardwareDriver.GetVoltage();
+                    VoltageText = voltage.ToString("F2") + " V";
+                }
+                catch (Exception ex)
+                {
+                    VoltageText = "ERRORE: " + ex.Message;
+                    break;
+                }
                 await Task.Delay(100);
             }
         }
