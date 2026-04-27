@@ -1,4 +1,5 @@
 <img width="1918" height="1113" alt="Screenshot 2026-04-27 121327" src="https://github.com/user-attachments/assets/c7fbf795-9e66-49e8-bed3-290e3c4717ae" />
+
 # ⚡ Oscilloscope
 
 A simple, hybrid **C++** and **C#** project that simulates how an industrial ATE (Automatic Test Equipment) machine reads hardware data. 
