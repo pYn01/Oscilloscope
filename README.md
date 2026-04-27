@@ -1,5 +1,3 @@
-<img width="1000" height="580" alt="Screenshot 2026-04-27 121327" src="https://github.com/user-attachments/assets/c7fbf795-9e66-49e8-bed3-290e3c4717ae" />
-
 # ⚡ Oscilloscope
 
 A simple, hybrid **C++** and **C#** project that simulates how an industrial ATE (Automatic Test Equipment) machine reads hardware data. 
@@ -30,3 +28,5 @@ This project was built to practice cross-language integration, asynchronous prog
 2. Open the solution file in **Visual Studio**.
 3. Build the solution ( Ctrl+Shift+B ).
 4. Run the C# WPF project ( F5 )
+
+<img width="1000" height="580" alt="Screenshot 2026-04-27 121327" src="https://github.com/user-attachments/assets/c7fbf795-9e66-49e8-bed3-290e3c4717ae" />
